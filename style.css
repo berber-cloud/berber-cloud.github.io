@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.main-title {
+    color: #000000;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.bottom-title {
+    color: #2196F3;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+    
+    .bottom-title {
+        font-size: 1.2rem;
+        padding: 12px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .bottom-title {
+        font-size: 1rem;
+    }
+}
